@@ -32,10 +32,18 @@ mongoose.connect(
             console.log('Conectado a la BD');
       }
 );
- 
+
+
+app.listen(PORT, () => {
+      console.log(`Example app listening on port ${PORT}`)
+    })
+
+    /*
 https.createServer({
       key: fs.readFileSync('../../ssl/keys/d10d9_128a3_f859e374cb453b28e7bf8d13d13db07b.key'),
       cert: fs.readFileSync('../../ssl/certs/_wildcard__zebromex_com_d10d9_128a3_1746851711_f27676571a742a1fca274f66767a23a4.crt')
   }, app).listen(PORT, function(){
       console.log("My https server listening on port " + PORT + "...");
   });
+
+  */
