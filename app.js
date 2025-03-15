@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+//const bodyParser = require('body-parser');
+//const cors = require('cors');
 const PORT = 8000;
 require('dotenv/config');
 
-app.use(cors());
-app.use(bodyParser.json());
+//app.use(cors());
+//app.use(bodyParser.json());
 
 const empresaRoute = require('./rutas/empresa');
 const menuRoute = require('./rutas/menu');
