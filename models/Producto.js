@@ -1,4 +1,6 @@
-const mongoose = require('mongoose');
+
+import mongoose from 'mongoose';
+
 const ProductoSchema = mongoose.Schema({
       nombre : {
             type : String,
@@ -7,4 +9,6 @@ const ProductoSchema = mongoose.Schema({
       codigo : String
 });
 
-module.exports = mongoose.model('Producto',ProductoSchema);
+const Producto = mongoose.model('Producto', ProductoSchema);
+
+export default Producto;
