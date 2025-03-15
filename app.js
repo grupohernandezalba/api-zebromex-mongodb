@@ -15,6 +15,10 @@ const paginaRoute = require('./rutas/pagina');
 const blogRoute = require('./rutas/blog');
 const productoRoute = require('./rutas/producto');
 
+ 
+app.get('/', (req, res) => {
+      res.send('api funcionando')
+    });
 app.use('/empresa',empresaRoute);
 app.use('/menu',menuRoute);
 app.use('/pagina',paginaRoute);
