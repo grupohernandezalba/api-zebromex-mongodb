@@ -11,7 +11,7 @@ const MenuSchema = mongoose.Schema({
       txt_icono_men : String,
       pk_clave_men : String
 });
-
+// Exportamos el modelo para usarlo en otros ficheros
 const Menu = mongoose.model('Menu', MenuSchema);
 
 export default Menu;
