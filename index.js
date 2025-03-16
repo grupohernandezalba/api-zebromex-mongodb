@@ -5,6 +5,7 @@ import conexion from './conexion.js';
 import productosRoutes from './routes/productosRoutes.js';
 import empresasRoutes from './routes/empresasRoutes.js';
 import menusRoutes from './routes/menusRoutes.js';
+import blogsRoutes from './routes/blogsRoutes.js';
 
 
 const app = express();
@@ -32,6 +33,7 @@ app.listen(3000, () => {
     console.log('Servidor iniciado en http://localhost:3000');
 });
 
+app.use(blogsRoutes);
 app.use(menusRoutes);
 app.use(empresasRoutes);
 app.use(productosRoutes);
