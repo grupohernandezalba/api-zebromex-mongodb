@@ -1,4 +1,10 @@
 import Blog from '../models/Blog.js';
+import express from 'express';
+
+const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const getBlogs = (req, res) => {
     Blog.find()
