@@ -41,7 +41,7 @@ const createBlog = (req, res) => {
         res.json(registro);
     })
     .catch(err => {
-        //console.error('Error al guardar el blog: ', err);
+        console.error('Error al guardar el blog: ', err);
         res.status(400).send(err);
     });
 };
