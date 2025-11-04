@@ -12,9 +12,7 @@ const app = express();
 
 app.use(cors());
 
-app.use(cors({
-    origin: 'https://zebromex.com'
-  }));
+app.use(cors());
 
 
 app.use(express.json());
