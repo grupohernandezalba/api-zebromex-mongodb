@@ -32,12 +32,16 @@ const deleteBlog = (req, res) => {
 
 const createBlog = (req, res) => {
     const datos = req.body;
+
+    console.log('Datos del formulario: ', datos);
+
     const nuevoBlog = new Blog(datos);
     nuevoBlog.save()
     .then(registro => {
         res.json(registro);
     })
     .catch(err => {
+        //console.error('Error al guardar el blog: ', err);
         res.status(400).send(err);
     });
 };
